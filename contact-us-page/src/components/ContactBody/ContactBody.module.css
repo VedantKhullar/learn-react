@@ -1,0 +1,41 @@
+.contact_body_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.call_to_action_container {
+    width: 100%;
+}
+
+.call_chat_button_container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 3.75rem 0 1.25rem 0;
+}
+
+.form_container {
+    padding-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form_container input {
+    width: 100%;
+    height: 1.875rem;
+}
+
+.form_container textarea {
+    width: 100%;
+}
+
+.form_field {
+    position: relative;
+}
+
+.form_field label {
+    position: absolute;
+    top: -1.375rem;
+    left: 0.75rem;
+    background: white;
+    padding: 0.625rem;
+}
