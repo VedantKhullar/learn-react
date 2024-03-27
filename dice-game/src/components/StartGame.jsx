@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-function StartGame() {
+function StartGame({toggleGameStart}) {
     return (
         <Container>
             <div>
@@ -8,7 +8,7 @@ function StartGame() {
             </div>
             <div className='content'>
                 <h1>DICE GAME</h1>
-                <Button>Play Now</Button>
+                <Button onClick={toggleGameStart}>Play Now</Button>
             </div>
         </Container>
     )
