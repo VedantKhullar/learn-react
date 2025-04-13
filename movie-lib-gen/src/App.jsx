@@ -4,6 +4,7 @@ import Search from './components/Search';
 import { useEffect } from 'react';
 import MovieCard from './components/MovieCard';
 import {useDebounce} from 'react-use'
+import { updateSearchTerm } from './appwrite';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -39,6 +40,9 @@ function App() {
       }
       const data = await response.json();
       setMovieList(data.results || []);
+      if(query && data.results.length > 0){
+        await updateSearchTerm(query, data.results[0])
+      }
     } catch(error){
       console.error('Error in fetching movies', error);
       setErrorMessage('There was an error fetching the movie list.');

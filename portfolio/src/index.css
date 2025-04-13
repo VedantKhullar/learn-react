@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Roboto Mono", serif;
+}
+
+.logo-text {
+    text-decoration: underline overline;
+    text-underline-offset: 8px;
+}
+
+.about-image {
+    max-height: 500px;
+}
+.profile-picture {
+    max-height: 550px;
+}
